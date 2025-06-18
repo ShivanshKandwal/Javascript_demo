@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Shivansh Kandwal</h1>
+    <button id="stop">change</button>
+    <button id="stop2">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    const changetext = function(){
+        document.querySelector('h1').innerHTML = "Shivansh is the best"
+    }
+    const changeme = setTimeout(changetext,2000)//2sec . 1 = ms
+    
+    document.querySelector("#stop").addEventListener('click',function(){
+        clearTimeout(changeme)
+        console.log("STOPPED")
+    })
+
+
+    const sayDate = function(str){
+        console.log(str,"Shivansh",Date.now())
+    }
+
+    let IntervalId ; 
+    
+    document.querySelector("#start").addEventListener('click',function(){
+        console.log("started")
+        IntervalId = setInterval(sayDate, 1000 , "wassup")
+    })
+
+    document.querySelector("#stop2").addEventListener('click',function(){
+            clearTimeout(IntervalId)
+            console.log("stop")
+        })
+
+
+</script>
+</html>

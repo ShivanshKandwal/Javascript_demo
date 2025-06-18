@@ -1,0 +1,79 @@
+/* h1 {
+    color:#351431;
+}
+#hone{
+    color:chocolate ;
+    text-decoration: blue  wavy overline underline;
+    text-align: center;
+}
+.myclass{
+    color:green;
+}
+
+#p1{
+    color:#775253;
+    text-align :center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: 20px;
+    line-height: 12px;
+    text-transform:uppercase ;
+}
+
+#p2{
+    color:red ;
+    text-align :center;
+    font-family:serif;
+    
+}
+
+
+button{
+    color:#351431;
+    background-color:#d1d3c4;
+}
+
+body{
+    background-color: #F4D58D;
+}
+.heading{
+    color:red;
+}
+a{
+    text-decoration: none;
+}
+#hello{
+    font-weight:bolder;
+}
+--- doesnt take priority over normal tags like above
+*{
+    color:green;
+} */
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color:aqua;
+    border-width:5px;
+    border-style:solid;
+    border-color: blueviolet;
+    text-align: center;
+    border-radius: 20%;
+    padding:20px;
+    margin:20px;
+    display:inline-block;
+}
+h1{
+    height: 40px;
+    width: 150px;
+    background-color:rgb(127, 255, 212,0.25);
+    border-width:5px;
+    border-style:dashed;
+    border-color: rgb(255, 0, 0,0.5);
+    text-align: center;
+    border-radius: 20%;
+    padding:25px;
+}
+
+#abc{
+    background-color: pink;
+}
